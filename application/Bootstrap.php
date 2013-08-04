@@ -1,6 +1,6 @@
 <?php
 /**
- * @license    GNU General Public License version 2 or later; see LICENSE
+ * @license    GNU Affero Public License version 3 or later; see LICENSE
  */
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
 

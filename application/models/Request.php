@@ -7,7 +7,7 @@
  * @package ApplicationModel
  * @subpackage RequestModel
  * @copyright       Copyright (C) 2012-2013 S.D.O.C. LTD. All rights reserved.
- * @license         GNU General Public License version 2 or later; see LICENSE.txt
+ * @license         GNU Affero Public License version 3 or later; see LICENSE.txt
  */
 
 /**
@@ -397,7 +397,6 @@ class Application_Model_Request {
 		}
 	}
 
-	//CR YIFAT - TAKE OUT TO SOAP CLIENT ?!?!
 	/**
 	 * 
 	 * Internal's Soap Client Used to send Soap to Provider
