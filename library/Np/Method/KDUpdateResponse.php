@@ -60,7 +60,7 @@ class Np_Method_KDUpdateResponse extends Np_MethodResponse {
 				->where('message_type IN (?)', array("Request_response", "Update_response", "Cancel_response"))
 				->where('reject_reason_code IS NULL')
 				->order('id DESC');
-			$result = $select->query()->fetchRow();
+			$result = $select->query()->fetchObject();
 			if ($result === FALSE) {
 				return FALSE;
 			}
