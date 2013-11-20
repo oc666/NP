@@ -21,19 +21,7 @@ set_include_path(implode(PATH_SEPARATOR, array(
 require_once 'Zend/Application.php';
 
 // Create application, bootstrap, and run
-if (@preg_match('/ninet\.sergata\.com$/', $_SERVER['HTTP_HOST']) !== 0) {
-	//sergata dev environment
-	$config_path = '/configs/application.ini';
-} else if (@preg_match('/beta\.sergata\.com$/', $_SERVER['HTTP_HOST']) !== 0) {
-	//sergata testing environment
-	$split_host = explode('.', $_SERVER['HTTP_HOST']);
-	if (is_array($split_host) && count($split_host)) {
-		$config_path = DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR .
-				$split_host[0] . '.ini';
-	} else {
-		die("Please configure environment settings");
-	}
-} else if (strpos($_SERVER['HTTP_HOST'], '81.218.251.210') !== FALSE || 
+if (strpos($_SERVER['HTTP_HOST'], '1.1.1.1') !== FALSE || 
 	strpos($_SERVER['HTTP_HOST'], 'localhost') !== FALSE) {
                 if (strpos($_SERVER['REQUEST_URI'],'np2')!==FALSE) {
                         $config_path = DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR .
