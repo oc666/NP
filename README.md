@@ -1,3 +1,7 @@
+Notice
+======
+This repository moved to GitLab: https://git.bill.run/sdoc/npg
+
 About
 ======
 
